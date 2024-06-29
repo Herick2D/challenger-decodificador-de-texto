@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decode</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<main>
+  <section class="message-to-encode">
+    <h2>Message to encode</h2>
+    <textarea id="inputMessage" placeholder="Digite seu texto"></textarea>
+  </section>
+  <div class="btn">
+    <button onclick="criptografar()">Encode</button>
+    <button onclick="descriptografar()">Decode</button>
+    <button id="copyBtn" onclick="copiarTexto()" style="display: none">Copiar</button>
+  </div>
+  <aside class="message-encoded">
+    <h2>Message encoded</h2>
+    <textarea id="outputMessage" placeholder="Nenhuma mensagem encontrada"  oninput="checkTextArea()" readonly></textarea>
+  </aside>
+  <span>Apenas letras minúsculas e sem acento.</span>
+  <footer>
+    <p>Criado por Herick M.</p>
+    <p>
+      <a href="https://www.linkedin.com/in/herick-moreira/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/Herick2D" target="_blank">GitHub</a>
+    </p>
+  </footer>
+</main>
+</body>
+</html>
