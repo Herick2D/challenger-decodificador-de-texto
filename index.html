@@ -14,13 +14,19 @@
     <textarea id="inputMessage" placeholder="Digite seu texto"></textarea>
   </section>
   <div class="btn">
-    <button onclick="criptografar()">Encode</button>
+    <button onclick="toClick()">Encode</button>
     <button onclick="descriptografar()">Decode</button>
-    <button id="copyBtn" onclick="copiarTexto()" style="display: none">Copiar</button>
+    <button id="copyBtn"
+            onclick="copiarTexto()"
+            style="display: none">Copiar</button>
   </div>
   <aside class="message-encoded">
     <h2>Message encoded</h2>
-    <textarea id="outputMessage" placeholder="Nenhuma mensagem encontrada"  oninput="checkTextArea()" readonly></textarea>
+    <textarea
+        id="outputMessage"
+        placeholder="Nenhuma mensagem encontrada"
+        oninput="checkTextArea()"
+        readonly></textarea>
   </aside>
   <span>Apenas letras minúsculas e sem acento.</span>
   <footer>

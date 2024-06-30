@@ -6,6 +6,7 @@ function criptografar() {
   .replace(/a/g, "ai").replace(/o/g, "ober")
   .replace(/u/g, "ufat");
   document.getElementById('outputMessage').innerHTML = encodedMessage;
+
 }
 
 function descriptografar() {
@@ -33,9 +34,14 @@ function checkTextArea() {
 
   const copyBtn = document.getElementById('copyBtn');
 
-  if (outputMessage > 0) {
+  if (outputMessage.length > 0) {
     copyBtn.style.display = 'inline-block';
   } else {
     copyBtn.style.display = 'none';
   }
+}
+
+function toClick() {
+  criptografar();
+  checkTextArea();
 }
