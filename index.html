@@ -5,37 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Decode</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <script src="script.js" defer></script>
 </head>
 <body>
 <main>
   <section class="message-to-encode">
-    <h2>Message to encode</h2>
+    <h2>Criptografar</h2>
     <textarea id="inputMessage" placeholder="Digite seu texto"></textarea>
   </section>
-  <div class="btn">
-    <button onclick="toClick()">Encode</button>
-    <button onclick="descriptografar()">Decode</button>
-    <button id="copyBtn"
-            onclick="copiarTexto()"
-            style="display: none">Copiar</button>
+  <div class="btn-group">
+    <button class="btn-encode" onclick="toClick()">Criptografar <i class="ph-fill ph-key"></i></button>
+    <button class="btn-decode" onclick="descriptografar()">Desencriptografar <i class="ph-fill ph-keyhole"></i></button>
   </div>
   <aside class="message-encoded">
-    <h2>Message encoded</h2>
+    <h2>Encriptografada</h2>
     <textarea
         id="outputMessage"
         placeholder="Nenhuma mensagem encontrada"
         oninput="checkTextArea()"
         readonly></textarea>
   </aside>
-  <span>Apenas letras minúsculas e sem acento.</span>
-  <footer>
-    <p>Criado por Herick M.</p>
-    <p>
-      <a href="https://www.linkedin.com/in/herick-moreira/" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/Herick2D" target="_blank">GitHub</a>
-    </p>
-  </footer>
+  <div class="btn-group">
+    <button id="copyBtn" onclick="copiarTexto()" style="display: none">Copiar <i class="ph-fill ph-copy"></i></button>
+  </div>
 </main>
+<footer>
+  <p><i class="ph-fill ph-warning-circle"></i> Apenas letras minúsculas e sem acento</p>
+  <p>Criado por Herick M.</p>
+  <p>
+    <a href="https://www.linkedin.com/in/herick-moreira/" target="_blank">LinkedIn <i class="ph-fill ph-linkedin-logo"></i></a> |
+    <a href="https://github.com/Herick2D" target="_blank">GitHub <i class="ph-fill ph-github-logo"></i></a>
+  </p>
+</footer>
 </body>
 </html>

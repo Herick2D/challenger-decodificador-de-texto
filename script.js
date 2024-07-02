@@ -1,11 +1,11 @@
 function criptografar() {
   const inputMessage = document.getElementById('inputMessage').value;
-  const encodedMessage = inputMessage
-  .replace(/e/g, "enter")
-  .replace(/i/g, "imes")
-  .replace(/a/g, "ai").replace(/o/g, "ober")
-  .replace(/u/g, "ufat");
-  document.getElementById('outputMessage').innerHTML = encodedMessage;
+  document.getElementById('outputMessage').innerHTML = inputMessage
+    .replace(/e/g, "enter")
+    .replace(/i/g, "imes")
+    .replace(/a/g, "ai")
+    .replace(/o/g, "ober")
+    .replace(/u/g, "ufat");
 
 }
 
